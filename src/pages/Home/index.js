@@ -74,8 +74,25 @@ function Home() {
       </div>
       {/* </div> */}
 
+      <div class="hotline-phone-ring-wrap">
+        <div class="hotline-phone-ring">
+          <div class="hotline-phone-ring-circle"></div>
+          <div class="hotline-phone-ring-circle-fill"></div>
+          <div class="hotline-phone-ring-img-circle">
+            <a href="tel:0987654321" class="pps-btn-img">
+              <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50"></img>
+            </a>
+          </div>
+        </div>
+        <div class="hotline-bar">
+          <a href="#">
+            <span class="text-hotline">Liên hệ</span>
+          </a>
+        </div>
+      </div>
       <img className='introduceService' src="https://laptopxaydung.com/assets/images/banner-footer.png"></img>
     </div>
+
   );
 
 }

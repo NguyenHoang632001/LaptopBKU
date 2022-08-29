@@ -27,7 +27,7 @@ function HotDeal(props) {
         <div className="list-product">
             {
                 !_.isEmpty(configDiscount) && configDiscount.map(function (item) {
-
+                    console.log("dsfd", item)
                     return (
                         <>
                             {item.configData &&
@@ -37,7 +37,7 @@ function HotDeal(props) {
                                     image={item.configData.image1}
                                     key={item.id}
                                     id={item.id}
-                                    name={item.name}
+                                    name={item.configData.name}
                                     memory={!_.isEmpty(item.configData) ? item.memory : null}
                                     CPUType={!_.isEmpty(item.configData) ? item.CPUType : null}
                                     ramMemory={!_.isEmpty(item.configData) ? item.ramMemory : null}
