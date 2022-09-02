@@ -35,7 +35,7 @@ const customStyles = {
     margin: "60px auto -25px",
     border: "none",
 
-    boxShadow: "rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset",
+    boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
 
 
   },
@@ -49,6 +49,7 @@ function ProductInfor() {
   const [currentConfig, setCurrentConfig] = useState({});
   const [currentImage, setCurrentImage] = useState('');
   const [modalIsOpen, setIsOpen] = useState(false);
+
 
   console.log("currentProduct", currentProduct)
   useEffect(() => {
@@ -75,6 +76,7 @@ function ProductInfor() {
   }
   const handleOnclickConfig = (config) => {
     setCurrentConfig(config);
+    console.log("config: ", config.id)
   }
   const openModal = () => {
     setIsOpen(true);
@@ -141,10 +143,11 @@ function ProductInfor() {
           {currentProduct.configData && currentProduct.configData.map(config => {
             return (
 
-              <button key={config.id} onClick={() => handleOnclickConfig(config)} className="item_config">
-                <span >{`${config.CPUType}/${config.ramMemory}/${config.memory}/${config.sizeScreen}`}</span>
+              <button key={config.id} onClick={() => handleOnclickConfig(config)} className={currentConfig.id === config.id ? "item_config activeConfig" : "item_config"}>
+                <span className="InforItemProduct">{`${config.CPUType}/${config.ramMemory}/${config.memory}/${config.sizeScreen}`}</span>
                 <br />
-                <span>{config.price} VND</span>
+                <span className="priceItemProduct">{formatCash(config.price)} VND</span>
+
               </button>
             )
           })}
@@ -259,6 +262,7 @@ function ProductInfor() {
         </div>
         <div className="line"></div>
         <div className="containerContent">
+          <div className="line"> </div>
           <h3 className="Content-Title">PIN/Battery</h3>
           <div>
             <span className="contentLabel">Thông tin Pin : </span>

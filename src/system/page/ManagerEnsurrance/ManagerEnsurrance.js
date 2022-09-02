@@ -49,13 +49,14 @@ function ManagerEnsurrance() {
 
     }
     return (<div className="containerManagerEnsurrance">
-        <Link to="/system/update-ensurrance"><button>Tao</button></Link>
+        {/* <Link to="/system/update-ensurrance" className=''><button>Tạo</button></Link> */}
+        <Link className="link-create" to={"/system/update-ensurrance"}> <button className="create" >Tạo</button></Link>
         <table>
             <thead>
-                <tr>
+                {/* <tr>
                     <th className='title'>TIÊU ĐỀ</th>
                     <th className='action'>THAO TÁC</th>
-                </tr>
+                </tr> */}
             </thead>
 
             <tbody>
@@ -63,7 +64,13 @@ function ManagerEnsurrance() {
                     allEnsurrance.map(item => {
                         return (
                             <tr key={item.id}>
-                                <td className='title_postMain'>Nguoi Mua {item.name}</td>
+                                {console.log(item)}
+                                <td className='title_postMain'>Người Mua : {item.name}</td>
+                                <td className='title_postMain'>Địa chỉ Email : {item.email}</td>
+                                <td className='title_postMain'>Số điện thoại : {item.phoneNumber}</td>
+                                <td className='title_postMain'>Sản phẩm đã mua : {item.purchasedProduct}</td>
+                                <td className='title_postMain'>Ngày Mua : {item.purchaseDate}</td>
+                                <td className='title_postMain'>Mã máy : {item.token}</td>
                                 <td className='container_tools'>
 
                                     <button className="del" onClick={() => handleDeletePost(item.id)}>Xoá</button>

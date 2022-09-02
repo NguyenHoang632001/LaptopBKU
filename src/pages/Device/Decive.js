@@ -1,6 +1,6 @@
 import './Device.scss'
-function Device() {
-    return (<div className='containerDevice'>Device</div>);
+function Accessory() {
+    return (<div className='containerDevice'>accessory</div>);
 }
 
-export default Device;
+export default Accessory;

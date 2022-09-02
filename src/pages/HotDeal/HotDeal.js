@@ -4,6 +4,7 @@ import _ from "lodash";
 import { formatCash } from "../../utils/customizeString"
 import CardItem from "components/CardItem";
 import { Link } from "react-router-dom";
+import './HotDeal.scss'
 
 
 
@@ -25,11 +26,19 @@ function HotDeal(props) {
 
 
         <div className="list-product">
+
+
+            <div className="titleHotDeal">
+                <div className="iconHotDeal"></div>
+                <span className="nameHotDeal">KHUYẾN MÃI HOT</span>
+            </div>
+
             {
                 !_.isEmpty(configDiscount) && configDiscount.map(function (item) {
                     console.log("dsfd", item)
                     return (
                         <>
+
                             {item.configData &&
 
                                 <CardItem

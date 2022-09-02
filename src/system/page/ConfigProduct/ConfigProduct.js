@@ -41,20 +41,23 @@ function ConfigProduct() {
 
     }
     return (<div className="containerConfigProduct">
-        <Link to={`/system/update-config?productId=${id}&type=create`}>Tạo</Link>
+        <Link to={`/system/update-config?productId=${id}&type=create`} className="creatConfig">Tạo</Link>
         {configProduct.map((item, index) => {
-            return (<div>
+            return (<div className="containerConfig">
 
-                <ul key={item.id}>
-                    <li>Cấu hình {index}</li>
-                    <li>Bộ nhớ Ram: {item.ramMemory}</li>
-                    <li>Bộ nhớ ổ cứng: {item.memory}</li>
-                    <li>Màn hình: {item.screenTechnology}</li>
-                    <li>Màn hình cảm ứng: {item.touchScreen}</li>
-                    <li>Giảm giá: {item.discount}</li>
+                <ul key={item.id} className="listConfig">
+                    <li className="itemConfig">Cấu hình {index}</li>
+                    <li className="itemConfig">Bộ nhớ Ram: {item.ramMemory}</li>
+                    <li className="itemConfig">Bộ nhớ ổ cứng: {item.memory}</li>
+                    <li className="itemConfig">Màn hình: {item.screenTechnology}</li>
+                    <li className="itemConfig">Màn hình cảm ứng: {item.touchScreen}</li>
+                    <li className="itemConfig">Giảm giá: {item.discount}</li>
                 </ul>
-                <button onClick={() => handleDeleteConfig(item.id)}>Xóa</button>
-                <Link to={`/system/update-config?productId=${id}&type=update&id=${item.id}`}>Sửa</Link>
+                <div className="toolsConfig">
+                    <button onClick={() => handleDeleteConfig(item.id)} className="deleConfig">Xóa</button>
+                    <button className="UpdateConfigBtn"> <Link to={`/system/update-config?productId=${id}&type=update&id=${item.id}`} className="UpdateLinkConfig">Sửa</Link></button>
+
+                </div>
 
             </div>)
         })}

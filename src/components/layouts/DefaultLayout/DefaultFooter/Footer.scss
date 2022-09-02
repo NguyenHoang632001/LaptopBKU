@@ -1,102 +1,87 @@
-.footer-wrapper {
-    width: 100%;
-    min-height: 300px;
-    // color: white;
+.containerFooter {
     display: flex;
-    padding: 10px 5px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-top: 2px solid black;
-    border-bottom: 1px solid black;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    // background-color: red;
+    border-top: 3px solid black;
 
+    padding-bottom: 70px;
 
-    // background-color: #94bfde6b;
 
     .footer-img {
-        width: 100%;
-        height: 100%;
-
-
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // background-color: black;
 
         .footer-imgItem {
             width: 100%;
-            height: 100%;
+            height: 80%;
             object-fit: cover;
-            border-radius: 10px;
+        }
 
+        .discriptionShop {
+            font-size: 20px;
+            text-align: center;
+            color: #0992f4;
         }
     }
 
-    .footer-column {
-        min-width: 100px;
+    .containerFooterList {
+        width: 80%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        // background-color: blue;
 
-        border-radius: 5%;
+        .footer-wrapper {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            justify-content: space-around;
+            // background-color: white;
 
-        width: 100%;
-        min-height: 20px;
-        // background: red;
+            .footer-column {
+                width: 30%;
+                // background-color: blue;
 
-
-        margin: 20px;
-
-        .footer-title {
-
-            color: black;
-            font-size: 20px;
-            padding-left: 15px;
-
-
-        }
-
-        .footer-list {
-
-            list-style: none;
-            padding: 0;
+                .footer-title {
+                    font-size: 20px;
+                    margin-left: 40px;
 
 
-            .footer-item {
+                }
 
-
-                .footer-link {
-                    padding: 10px 15px;
-                    display: block;
+                .footer-list {
                     width: 100%;
 
+                    a {
+                        text-decoration: none;
+                        width: 100%;
+                        margin-left: 0;
+                        line-height: 30px;
 
-                    text-decoration: none;
-                    font-size: 16px;
-                    color: black;
-
-                    &:hover {
-                        color: brown;
-                        text-decoration: underline;
                     }
                 }
             }
+        }
+
+        .modifierFooter {
+            // background-color: red;
+            width: 90%;
+
+            .shopeSystem {
+                font-size: 18px;
+            }
+
+            .place {
+                font-size: 15px;
+            }
+
 
         }
     }
-}
 
-.container_title-lastHeader {
-    width: 100%;
-    height: 22px;
-    background-color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 0;
-
-    .title_footer-last {
-        text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 0;
-        color: black;
-
-
-    }
 }

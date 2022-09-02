@@ -32,7 +32,7 @@ const publicRoutes = [
   { path: '/product/:id', component: ProductInfor },
   { path: '/product', component: Product },
   { path: '/contact', component: Contact },
-  { path: '/device', component: Device }
+  { path: '/accessory', component: Device }
 ];
 const privateRoutes = [
   { path: '/', component: SystemPage },

@@ -42,7 +42,7 @@ const Banner = (props) => {
             <div className="list-product">
                 {
                     !_.isEmpty(listProduct) && listProduct.map(function (item) {
-                        const price = !_.isEmpty(item.configData) ? formatCash(item.configData[0].price) : null;
+                        const price = !_.isEmpty(item.configData) ? (item.configData[0].price) : null;
                         return (
                             <CardItem
                                 key={item.id}

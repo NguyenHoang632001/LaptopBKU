@@ -3,12 +3,14 @@ import './DefaultLayout.scss'
 import Footer from './DefaultFooter/Footer';
 import { useSelector } from 'react-redux';
 import { PuffLoader } from 'react-spinners';
+import ScrollToTop from 'react-scroll-to-top';
 function DefaultLayout({ children, ...props }) {
   const isLoading = useSelector(state => state.app.isLoading);
 
   return (
     <div>
       <Header />
+      <ScrollToTop smooth component={<p style={{ color: "white", fontWeight: "600" }}>TOP</p>} top="500" />
       <div className='loading'>
         {isLoading && <PuffLoader loading color='blue' />}
       </div>

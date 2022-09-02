@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
+import { formatCash } from 'utils/customizeString';
 import './CardItem.scss'
+
 function CardItem(props) {
     let navigate = useNavigate();
 
@@ -12,7 +14,8 @@ function CardItem(props) {
         <div className="card-wrapper" onClick={handleChangePage}>
             <img src={props.image} placeholder="Laptop" className="card-img" />
             <h3 className="card-name">{props.name}</h3>
-            <span className="card-price">{props.price ? `${props.price} VNĐ` : 'Đang cập nhật'}</span>
+            <span className="card-price">{props.price ? `${formatCash(props.price)} VNĐ` : 'Đang cập nhật'}</span>
+            {/* formatCash(item.configData[0].price) */}
             <div className="containerDetailConfig">
                 <span className="itemDetailConfig">{props.CPUType ? `${props.CPUType} ` : 'Đang cập nhật'}/ </span>
                 <span className="itemDetailConfig">{props.ramMemory ? `${props.ramMemory} ` : 'Đang cập nhật'}/ </span>

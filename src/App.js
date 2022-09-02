@@ -17,7 +17,7 @@ function App(props) {
   return (
 
 
-    <Router >
+    <Router basename='https://nguyenhoang632001.github.io/testLaptopBKU' >
       <ScrollToTop>
 
         <Provider store={store}>

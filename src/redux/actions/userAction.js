@@ -17,15 +17,10 @@ export const handleUserLogin = (email, password) => {
     }
 }
 
-export const handleUserLogout = (id, accessToken) => {
+export const handleUserLogout = () => {
     return async (dispatch) => {
         try {
-            let res = await logout(id, accessToken);
-            if (res && res.errCode === 0) {
-                dispatch({ type: actions.USER_LOGOUT_SUCCESS })
-            } else {
-                dispatch({ type: actions.USER_LOGOUT_FAILED });
-            }
+            dispatch({ type: actions.USER_LOGOUT_SUCCESS });
         } catch (error) {
             console.log(error)
             dispatch({ type: actions.USER_LOGOUT_FAILED })

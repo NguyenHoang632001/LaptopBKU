@@ -9,7 +9,7 @@ function SystemHeader() {
     const navigate = useNavigate();
     let dispatch = useDispatch();
     const handleLogout = async () => {
-        await dispatch(handleUserLogout(userInfo.id));
+        await dispatch(handleUserLogout());
         navigate('../login')
     }
     return (

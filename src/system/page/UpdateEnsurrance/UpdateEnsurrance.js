@@ -113,35 +113,35 @@ function UpdateEnsurrance
 
         <div className='ItemDetailWrap'>
             <label className='item' >Tên người mua</label>
-            <textarea onChange={(e) => handleOnChangInput(e, "name")} value={name}></textarea>
+            <textarea className='inputEnsurrance' onChange={(e) => handleOnChangInput(e, "name")} value={name}></textarea>
         </div>
         <div className='ItemDetailWrap'>
             <label className='item' >Sản phẩm đã mua</label>
-            <textarea onChange={(e) => handleOnChangInput(e, "purchasedProduct")} value={purchasedProduct}></textarea>
+            <textarea className='inputEnsurrance' onChange={(e) => handleOnChangInput(e, "purchasedProduct")} value={purchasedProduct}></textarea>
         </div>
         <div className='ItemDetailWrap'>
             <label className='item' >Số điện thoại</label>
-            <textarea onChange={(e) => handleOnChangInput(e, "phoneNumber")} value={phoneNumber}></textarea>
+            <textarea className='inputEnsurrance' onChange={(e) => handleOnChangInput(e, "phoneNumber")} value={phoneNumber}></textarea>
         </div>
         <div className='ItemDetailWrap'>
             <label className='item' >Email</label>
-            <textarea onChange={(e) => handleOnChangInput(e, "email")} value={email}></textarea>
+            <textarea className='inputEnsurrance' onChange={(e) => handleOnChangInput(e, "email")} value={email}></textarea>
         </div>
         <div className='ItemDetailWrap'>
             <label className='item' >Ngày mua</label>
-            <textarea onChange={(e) => handleOnChangInput(e, "purchaseDate")} value={purchaseDate}></textarea>
+            <textarea className='inputEnsurrance' onChange={(e) => handleOnChangInput(e, "purchaseDate")} value={purchaseDate}></textarea>
         </div>
         <div className='ItemDetailWrap'>
             <label className='item' >Ngày hết hạn</label>
-            <textarea onChange={(e) => handleOnChangInput(e, "expiredTime")} value={expiredTime}></textarea>
+            <textarea className='inputEnsurrance' onChange={(e) => handleOnChangInput(e, "expiredTime")} value={expiredTime}></textarea>
         </div>
         <div className='ItemDetailWrap'>
             <label className='item' >Thời gian bảo hành</label>
-            <textarea onChange={(e) => handleOnChangInput(e, "warrantyPeriod")} value={warrantyPeriod}></textarea>
+            <textarea className='inputEnsurrance' onChange={(e) => handleOnChangInput(e, "warrantyPeriod")} value={warrantyPeriod}></textarea>
         </div>
         <div className='ItemDetailWrap'>
             <label className='item' >Mã máy(serial)</label>
-            <textarea onChange={(e) => handleOnChangInput(e, "token")} value={token}></textarea>
+            <textarea className='inputEnsurrance' onChange={(e) => handleOnChangInput(e, "token")} value={token}></textarea>
         </div>
         <div className='ItemDetailWrap'>
 
@@ -151,7 +151,7 @@ function UpdateEnsurrance
                 {
 
 
-                    <button className='createProduct' onClick={() => handleCreateConfigEnsurrance()} >Tạo</button>
+                    <button className='createEnsurrance' onClick={() => handleCreateConfigEnsurrance()} >Tạo</button>
 
                 }
             </div>

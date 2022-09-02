@@ -138,39 +138,49 @@
 
 .productMain {
   position: relative;
-  width: 100px;
-  height: 90px;
-  // background-color: red;
+
+  ::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 10px;
+    transform: translateY(-100%);
+    background-color: transparent;
+  }
+
 
 
   .listProductRecomment {
-    // display: none;
     list-style: none;
     width: 100px;
     height: 200px;
-
-    // background-color: rgb(94, 255, 0);
     color: white;
-    // display: none;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     display: none;
 
+
+
+
+
+
+
     .listProductRecomment_Item {
       // font-size: 40px;
       width: 150px;
       height: 40px;
-      //
-
-      // margin-bottom: 0.1px;
       display: flex;
       align-items: center;
       transform: translateX(-40px);
       border-bottom: 1px solid #dfdfdf;
       padding-left: 10px;
-      color: black;
+      color: none;
+
 
       a {
         font-size: 16px;

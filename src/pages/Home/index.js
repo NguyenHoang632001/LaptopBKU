@@ -8,9 +8,16 @@ import './Home.scss';
 import Advertisement from './Advertisement';
 import _ from 'lodash';
 import { Link } from 'react-router-dom'
-import ScrollToTop from "react-scroll-to-top";
-import Skeleton from 'react-loading-skeleton'
 import HotDeal from 'pages/HotDeal/HotDeal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebook,
+  faFacebookMessenger,
+  faInstagram
+
+} from '@fortawesome/free-brands-svg-icons';
+import img1 from './img1.png'
+
 function Home() {
 
   // function formatCash(str) {
@@ -24,8 +31,6 @@ function Home() {
 
 
     <div className='container_Home'>
-
-      <ScrollToTop smooth component={<p style={{ color: "blue", }}>TOP</p>} top="500" />
       <Advertisement />
       {/* <div className="listProductHome"> */}
       <h2 className='suggestions'>Một số gợi ý dưới đây có thể giúp bạn tìm sản phẩm nhanh hơn...</h2>
@@ -59,16 +64,14 @@ function Home() {
           brand={[{ title: 'Thinkpad T Series', value: 'thinkpad t' },
           { title: 'Thinkpad X Series', value: 'thinkpad x' }, { title: 'Thinkpad P Series', value: 'thinkpad p' }]}
         />
-        {/* <Banner
+        <Banner
           initState='HP'
           title='LAPTOP HP'
-          brand={["dell latitude", "dell vostro", "dell inprion"]}
+          brand={[{ title: 'Thinkpad T Series', value: 'thinkpad t' },
+          { title: 'Thinkpad X Series', value: 'thinkpad x' }, { title: 'Thinkpad P Series', value: 'thinkpad p' }]}
+
         />
-        <Banner
-          initState='MACBOOK'
-          title='LAPTOP MACBOOK'
-          brand={["dell latitude", "dell vostro", "dell inprion"]}
-        /> */}
+
 
 
       </div>
@@ -88,9 +91,57 @@ function Home() {
           <a href="#">
             <span class="text-hotline">Liên hệ</span>
           </a>
+          <div className='InforHotline'>
+
+
+
+            <a href='https://getcssscan.com/css-box-shadow-examples' className='iconLinkHotline'>
+
+              <FontAwesomeIcon icon={faFacebook} className="iconHotline" />
+              <span className='InfoIcon'>Facebook</span>
+            </a>
+            <a href='https://getcssscan.com/css-box-shadow-examples' className='iconLinkHotline'>
+
+              <FontAwesomeIcon icon={faFacebookMessenger} className="iconHotline" />
+              <span className='InfoIcon'>Facebook</span>
+            </a>
+            <a href='https://getcssscan.com/css-box-shadow-examples' className='iconLinkHotline'>
+
+              <FontAwesomeIcon icon={faInstagram} className="iconHotline" />
+              <span className='InfoIcon'>Facebook</span>
+            </a>
+
+
+          </div>
         </div>
       </div>
-      <img className='introduceService' src="https://laptopxaydung.com/assets/images/banner-footer.png"></img>
+      <h2 className='experienceTitle'>TRẢI NGHIỆM CỦA KHÁCH HÀNG</h2>
+      <div className='experienceContainer'>
+        <div className='experienceItem'>
+          <img src={img1} className='experienceImg'></img>
+          <h4 className='experienceName'>MAI NGUYỄN</h4>
+          <span className='experienceWork'>Sinh viên Đại Học Bách Khoa TPHCM</span>
+          <p className='experienceComment'>"Lời khuyên cho các bác mua máy tính cấu hình tốt kèm theo giá hợp túi tiền sinh viên. Giá không cần phải bàn rồi. Còn về chất lượng thì khỏi phải chê, có vấn đề gì thì cứ mang máy tới ảnh bảo hành từ A luôn. Mua của ảnh an tâm lắm, cho nên mình giới thiệu cho bạn bè cùng mua thì chúng nó có có cảm nhận to bự"</p>
+        </div>
+        <div className='experienceItem'>
+          <img src={img1} className='experienceImg'></img>
+          <h4 className='experienceName'>MAI NGUYỄN</h4>
+          <span className='experienceWork'>Sinh viên Đại Học Bách Khoa TPHCM</span>
+          <p className='experienceComment'>"Lời khuyên cho các bác mua máy tính cấu hình tốt kèm theo giá hợp túi tiền sinh viên. Giá không cần phải bàn rồi. Còn về chất lượng thì khỏi phải chê, có vấn đề gì thì cứ mang máy tới ảnh bảo hành từ A luôn. Mua của ảnh an tâm lắm, cho nên mình giới thiệu cho bạn bè cùng mua thì chúng nó có có cảm nhận to bự"</p>
+        </div>
+        <div className='experienceItem'>
+          <img src={img1} className='experienceImg'></img>
+          <h4 className='experienceName'>MAI NGUYỄN</h4>
+          <span className='experienceWork'>Sinh viên Đại Học Bách Khoa TPHCM</span>
+          <p className='experienceComment'>"Lời khuyên cho các bác mua máy tính cấu hình tốt kèm theo giá hợp túi tiền sinh viên. Giá không cần phải bàn rồi. Còn về chất lượng thì khỏi phải chê, có vấn đề gì thì cứ mang máy tới ảnh bảo hành từ A luôn. Mua của ảnh an tâm lắm, cho nên mình giới thiệu cho bạn bè cùng mua thì chúng nó có có cảm nhận to bự"</p>
+        </div>
+        <div className='experienceItem'>
+          <img src={img1} className='experienceImg'></img>
+          <h4 className='experienceName'>MAI NGUYỄN</h4>
+          <span className='experienceWork'>Sinh viên Đại Học Bách Khoa TPHCM</span>
+          <p className='experienceComment'>"Lời khuyên cho các bác mua máy tính cấu hình tốt kèm theo giá hợp túi tiền sinh viên. Giá không cần phải bàn rồi. Còn về chất lượng thì khỏi phải chê, có vấn đề gì thì cứ mang máy tới ảnh bảo hành từ A luôn. Mua của ảnh an tâm lắm, cho nên mình giới thiệu cho bạn bè cùng mua thì chúng nó có có cảm nhận to bự"</p>
+        </div>
+      </div>
     </div>
 
   );

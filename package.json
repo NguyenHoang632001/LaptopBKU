@@ -1,11 +1,12 @@
 {
   "name": "tiktok",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://nguyenhoang632001.github.io/BkuLapTop/",
+  "private": "true",
+  "homepage": "https://nguyenhoang632001.github.io",
   "dependencies": {
     "@atlaskit/pagination": "^14.1.8",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.2.0",

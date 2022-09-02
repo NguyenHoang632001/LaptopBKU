@@ -21,7 +21,7 @@
 
         // background-color: red;
         cursor: pointer;
-        border-radius: 10px;
+        // border-radius: 10px;
 
 
 
@@ -32,8 +32,9 @@
 
             height: 120px;
             // border: 1px solid black;
-            background-color: rgba(83, 234, 237, 0.276);
-            border-radius: 10px;
+            // background-color: #0795df;
+            // border-radius: 10px;
+            color: black;
 
 
             .fourNewsBanner_img {
@@ -42,7 +43,7 @@
                 object-fit: cover;
                 // border: 2px solid blue;
                 padding-left: 5px;
-                border-radius: 10px;
+                // border-radius: 10px;
 
             }
 
@@ -60,7 +61,7 @@
 
         &:hover {
             cursor: pointer;
-            color: green;
+            color: white;
         }
     }
 

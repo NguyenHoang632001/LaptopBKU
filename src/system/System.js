@@ -18,6 +18,7 @@ function System() {
                         path={route.path}
                         element={
                             <Layout>
+
                                 <Page />
                             </Layout>
                         }

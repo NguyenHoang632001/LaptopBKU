@@ -10,7 +10,9 @@ import {
 
   faFolderOpen,
   faLaptopMedical,
-  faFileLines
+  faFileLines,
+
+  faHeadphonesSimple
 
 } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
@@ -44,15 +46,7 @@ function Header(props) {
     }
   }
 
-  // const keydownHandler = (e) => {
-  //   if (e.keyCode === 13) this.showMessage(handleOnChangeInput())
-  // }
-  // const componentDidMount = () => {
-  //   document.addEventListener('keydown', this.keydownHandler);
-  // }
-  // const componentWillUnmount = () => {
-  //   document.removeEventListener('keydown', this.keydownHandler);
-  // }
+
   return (
     <div className="header-wrapper">
 
@@ -93,7 +87,7 @@ function Header(props) {
         <ItemHeader to="/software" link="" icon={faScrewdriverWrench} title="KHO PHẦN MỀM" />
         <ItemHeader to="/ensurrance" link="" icon={faNewspaper} title="TRA CỨU BẢO HÀNH" />
         <ItemHeader to="/news" link="" icon={faFileLines} title="TIN TỨC" />
-        <ItemHeader to="/device" link="" icon={faLaptopMedical} title="DỊCH VỤ" />
+        <ItemHeader to="/accessory" link="" icon={faHeadphonesSimple} title="PHỤ KIỆN" />
         <ItemHeader to="/contact" link="" icon={faPhoneVolume} title="LIÊN HỆ" />
       </div>
     </div >

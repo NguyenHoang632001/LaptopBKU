@@ -6,11 +6,12 @@
     flex-direction: column;
     margin-bottom: 20px;
     // border-radius: 10px;
-    border: 1px solid rgb(93, 90, 246);
+    border: 1px solid #0795df;
     position: relative;
     margin: 0 auto;
     margin: 0px 0px 20px 0;
     // transform: translateY(-50px);
+    margin-bottom: 90px;
     margin-top: 50px;
 
 
@@ -20,7 +21,7 @@
         left: 50%;
         transform: translateX(-50%);
         font-size: 25px;
-        // background-color: red;
+
     }
 
     .nav-product {
@@ -31,7 +32,7 @@
         height: 50px;
         // border-bottom: 2px solid black;
         position: relative;
-        background-color: rgb(253, 235, 216);
+        // background-color: rgb(245, 22, 37);
         display: flex;
 
 
@@ -41,18 +42,18 @@
 
         .title-product {
             position: absolute;
-            width: 350px;
-            height: 50px;
+            width: 30%;
+            height: 60px;
             // background-color: red;
             top: 0;
             left: 0;
             transform: translateY(-100%);
-            border-top: 1px solid rgb(93, 90, 246);
+            border-top: 1px solid #0795df;
             ;
-            border-right: 1px solid rgb(93, 90, 246);
-            border-left: 1px solid rgb(93, 90, 246);
+            border-right: 1px solid #0795df;
+            border-left: 1px solid #0795df;
             ;
-            background-color: rgb(71, 82, 243);
+            background-color: #0795df;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -66,16 +67,21 @@
                 color: white;
                 text-align: center;
 
-
             }
         }
 
         .container-itemProduct {
             width: 100%;
+            height: 50px;
             display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            // padding-top: 20px;
+            background-color: #eee;
             align-items: center;
 
-            justify-content: space-evenly;
+
 
 
 
@@ -86,9 +92,11 @@
                 color: black;
                 font-weight: 500;
                 // background-color: red;
+                transition: all 0.01s linear;
 
                 &:hover {
-                    color: blue;
+                    color: #0795df;
+
                 }
             }
         }
@@ -109,9 +117,13 @@
         margin-top: 10px;
         margin-bottom: 10px;
         transition: all 0.3s linear;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
 
         &:hover {
-            transform: scale(1.08);
+
             cursor: pointer;
 
 
@@ -123,15 +135,14 @@
             border-radius: 10px;
             font-size: 17px;
             padding: 10px;
-            background-color: wheat;
+            background-color: #0795df;
             font-weight: 500;
             text-decoration: none;
-            color: black;
+            color: white;
             transition: all 0.2s linear;
 
             &:hover {
-                background-color: rgba(0, 255, 238, 0.815);
-                color: black;
+                cursor: pointer;
             }
 
 

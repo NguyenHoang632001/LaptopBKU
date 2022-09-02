@@ -1,3 +1,39 @@
 .containerContact {
     margin-top: 100px;
+    width: 90%;
+    height: 500px;
+    background-color: #eee;
+    margin: 100px auto 0;
+
+    .containerContact {
+        word-wrap: 100%;
+
+        .img1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+
+            &:active .img2 {
+                display: block;
+            }
+
+            &:hover .img2 {
+                display: block;
+            }
+
+            .img2 {
+                width: 100px;
+                height: 100px;
+                background-color: black;
+                display: none;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transform: translateY(100%);
+            }
+        }
+
+    }
 }
