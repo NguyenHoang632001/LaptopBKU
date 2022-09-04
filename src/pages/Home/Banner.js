@@ -24,12 +24,14 @@ const Banner = (props) => {
         return res;
     }
     return (
-        <div className="container-product">
+        <div className="containerProductMain">
+            <div className="title-product">
+                <h2 className="title-productText">{props.title}</h2>
+            </div>
             <div className="nav-product">
 
-                <div className="title-product">
-                    <h2 className="title-productText">{props.title}</h2>
-                </div>
+
+
                 <div className="container-itemProduct">
 
                     {!_.isEmpty(props.brand) && props.brand.map((item, index) => {
@@ -38,34 +40,49 @@ const Banner = (props) => {
                 </div>
 
             </div>
-            {/* <h1 className="listNow">DANH SÁCH SẢN PHẨM HIỆN CÓ</h1> */}
-            <div className="list-product">
-                {
-                    !_.isEmpty(listProduct) && listProduct.map(function (item) {
-                        const price = !_.isEmpty(item.configData) ? (item.configData[0].price) : null;
-                        return (
-                            <CardItem
-                                key={item.id}
-                                id={item.id}
-                                name={item.name}
-                                price={price}
-                                image={item.image1}
-                                memory={!_.isEmpty(item.configData) ? item.configData[0].memory : null}
-                                CPUType={!_.isEmpty(item.configData) ? item.configData[0].CPUType : null}
-                                ramMemory={!_.isEmpty(item.configData) ? item.configData[0].ramMemory : null}
-                                sizeScreen={!_.isEmpty(item.configData) ? item.configData[0].sizeScreen : null}
-                                discount={!_.isEmpty(item.configData) ? item.configData[0].discount : null}
+            <div className="container-product">
 
-                            />
-                        )
-                    })
-                }
-            </div>
+                {/* <div className="nav-product">
 
-            <div className="container-button">
 
-                <Link to={`/search?q=${props.initState}`} className="item-button">Xem Thêm</Link>
+                    <div className="container-itemProduct">
+
+                        {!_.isEmpty(props.brand) && props.brand.map((item, index) => {
+                            return <span key={index} onClick={() => handleBrand(item.value)} className="item-product">{item.title}</span>
+                        })}
+                    </div>
+
+                </div> */}
+
+                <div className="list-product">
+                    {
+                        !_.isEmpty(listProduct) && listProduct.map(function (item) {
+                            const price = !_.isEmpty(item.configData) ? (item.configData[0].price) : null;
+                            return (
+                                <CardItem
+                                    key={item.id}
+                                    id={item.id}
+                                    name={item.name}
+                                    price={price}
+                                    image={item.image1}
+                                    memory={!_.isEmpty(item.configData) ? item.configData[0].memory : null}
+                                    CPUType={!_.isEmpty(item.configData) ? item.configData[0].CPUType : null}
+                                    ramMemory={!_.isEmpty(item.configData) ? item.configData[0].ramMemory : null}
+                                    sizeScreen={!_.isEmpty(item.configData) ? item.configData[0].sizeScreen : null}
+                                    discount={!_.isEmpty(item.configData) ? item.configData[0].discount : null}
+
+                                />
+                            )
+                        })
+                    }
+                </div>
+
+                <div className="container-button">
+
+                    <Link to={`/search?q=${props.initState}`} className="item-button">Xem Thêm</Link>
+                </div>
             </div>
         </div>)
+
 }
 export default Banner;

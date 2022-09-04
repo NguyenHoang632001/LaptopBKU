@@ -6,6 +6,7 @@ import '../Search/Search.scss'
 import _ from "lodash";
 import { useDispatch } from "react-redux";
 import { fetchDataFinished, fetchDataStart } from "redux/actions";
+import './Product.scss'
 
 function Search() {
   const [currentRespone, setCurrentRespone] = useState([]);
@@ -40,35 +41,39 @@ function Search() {
   }
 
   return (
-    <div>
-      <div className="products">
-        {
-          currentRespone.map(item => {
-            return (
-              <CardItem
-                key={item.id}
-                id={item.id}
-                name={item.name}
-                description={item.description}
-                price={!_.isEmpty(item.configData) ? item.configData[0].price : null}
-                image={item.image1}
+    <div className="containerProductMain">
 
-              />
-            )
-          })
-        }
-      </div>
-      <div className="showPage">
-        <span>Trang {currentPage}/{totalPages}</span>
-      </div>
-      <div className="buttonChangePage">
-        <Pagination
-          pages={[...createPageArr(totalPages)]}
-          max={totalPages >= 10 ? 8 : totalPages}
-          value={currentPage}
-          onChange={(e, page) => setCurrentPage(page)}
-          style={{ fontSize: '16px' }}
-        />
+
+      <div className="containerProductPage">
+        <div className="products">
+          {
+            currentRespone.map(item => {
+              return (
+                <CardItem
+                  key={item.id}
+                  id={item.id}
+                  name={item.name}
+                  description={item.description}
+                  price={!_.isEmpty(item.configData) ? item.configData[0].price : null}
+                  image={item.image1}
+
+                />
+              )
+            })
+          }
+        </div>
+        <div className="showPage">
+          <span>Trang {currentPage}/{totalPages}</span>
+        </div>
+        <div className="buttonChangePage">
+          <Pagination
+            pages={[...createPageArr(totalPages)]}
+            max={totalPages >= 10 ? 8 : totalPages}
+            value={currentPage}
+            onChange={(e, page) => setCurrentPage(page)}
+            style={{ fontSize: '16px' }}
+          />
+        </div>
       </div>
     </div>
   );

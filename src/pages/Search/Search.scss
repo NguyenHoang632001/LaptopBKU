@@ -17,10 +17,36 @@
 }
 
 .products {
-    width: 90%;
-    margin-top: 80px;
+    width: 100%;
+    // margin-top: 80px;
 
 
 
 
+}
+
+.inforError {
+    width: 100%;
+    align-items: center;
+    font-size: 20px;
+    color: red;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.containerSearchMain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.containerSearch {
+    width: 1240px;
+    // background-color: red;
+    margin: 0 auto;
+    background-color: rgba(180, 227, 243, 0.146);
 }

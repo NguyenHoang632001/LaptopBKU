@@ -35,43 +35,45 @@ function Ensurrance() {
         }
     }
     return (
-        <div className="container_ensurrance">
+        <div className="containerEnsurranceMain">
+            <div className="container_ensurrance">
 
 
-            <div className="wrap_ensurrance">
-                <h2 className="title_ensurrance"><h3 className="title_ensurranceItem">KIỂM TRA BẢO HÀNH SẢN PHẨM</h3></h2>
+                <div className="wrap_ensurrance">
+                    <h2 className="title_ensurrance"><h3 className="title_ensurranceItem">KIỂM TRA BẢO HÀNH SẢN PHẨM</h3></h2>
 
 
-                <div className="container_ensurrance">
-                    <div className="search_ensurrance">
-                        <input value={token} onChange={e => handleOnChangeInput(e)} className="input_ensurrance" placeholder="Nhập Serial tại đây" onKeyPress={enterPressed.bind(this)} />
-                        <button onClick={() => handleOnClickCheckBtn(token)} className="btn_ensurrance">Kiểm tra</button>
+                    <div className="container_ensurrance">
+                        <div className="search_ensurrance">
+                            <input value={token} onChange={e => handleOnChangeInput(e)} className="input_ensurrance" placeholder="Nhập Serial tại đây" onKeyPress={enterPressed.bind(this)} />
+                            <button onClick={() => handleOnClickCheckBtn(token)} className="btn_ensurrance">Kiểm tra</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            {
-                isShowResult &&
-                <div className="checkEnsurrance">
-                    {
-                        !_.isEmpty(result) ?
-                            <div className="result_ensurrance">
-                                <ul className="result_ensurrance-list">
-                                    <li className="result_ensurrance-item">Tên khách hàng: {result.name}</li>
-                                    <li className="result_ensurrance-item">Địa chỉ email: {result.email}</li>
-                                    <li className="result_ensurrance-item">Số điện thoại : {result.phoneNumber}</li>
-                                    <li className="result_ensurrance-item">Ngày mua: {result.purchaseDate}</li>
-                                    <li className="result_ensurrance-item">Thời hạn bảo hành: {result.warrantyPeriod}</li>
-                                    <li className="result_ensurrance-item">Ngày hết hạn: {result.expiredTime}</li>
-                                    <li className="result_ensurrance-item">Sản phẩm đã mua: {result.purchasedProduct}</li>
+                {
+                    isShowResult &&
+                    <div className="checkEnsurrance">
+                        {
+                            !_.isEmpty(result) ?
+                                <div className="result_ensurrance">
+                                    <ul className="result_ensurrance-list">
+                                        <li className="result_ensurrance-item">Tên khách hàng: {result.name}</li>
+                                        <li className="result_ensurrance-item">Địa chỉ email: {result.email}</li>
+                                        <li className="result_ensurrance-item">Số điện thoại : {result.phoneNumber}</li>
+                                        <li className="result_ensurrance-item">Ngày mua: {result.purchaseDate}</li>
+                                        <li className="result_ensurrance-item">Thời hạn bảo hành: {result.warrantyPeriod}</li>
+                                        <li className="result_ensurrance-item">Ngày hết hạn: {result.expiredTime}</li>
+                                        <li className="result_ensurrance-item">Sản phẩm đã mua: {result.purchasedProduct}</li>
 
-                                </ul>
-                            </div> :
-                            <div className="result_ensurrance">
-                                <h3>Mã không tồn tại</h3>
-                            </div>
-                    }
-                </div>
-            }
+                                    </ul>
+                                </div> :
+                                <div className="result_ensurrance">
+                                    <h3>Mã không tồn tại</h3>
+                                </div>
+                        }
+                    </div>
+                }
+            </div>
         </div>
     );
 }

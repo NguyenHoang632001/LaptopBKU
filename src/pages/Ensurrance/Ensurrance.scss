@@ -1,12 +1,19 @@
+.containerEnsurranceMain {
+    width: 100%;
+    min-height: 500px;
+}
+
 .container_ensurrance {
-    width: 90%;
+    width: 1240px;
     height: 100px;
-    margin: 300px auto;
+
     // background: red;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
+    margin: 300px auto;
 
     .wrap_ensurrance {
         width: 100%;

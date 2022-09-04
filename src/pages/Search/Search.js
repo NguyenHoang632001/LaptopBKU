@@ -45,44 +45,46 @@ function Search() {
   }
 
   return (
-    <div>
-      <div className="products">
-        {/* <h2>DANH SÁCH SẢN PHẨM</h2> */}
-        {
-          currentRespone.map(item => {
-            return (
-              <CardItem
-                key={item.id}
-                id={item.id}
-                name={item.name}
-                description={item.description}
-                price={!_.isEmpty(item.configData) ? item.configData[0].price : null}
-                image={item.image1}
+    <div className="containerSearchMain">
+      <div className="containerSearch">
+        <div className="products">
+          {/* <h2>DANH SÁCH SẢN PHẨM</h2> */}
+          {
+            currentRespone.map(item => {
+              return (
+                <CardItem
+                  key={item.id}
+                  id={item.id}
+                  name={item.name}
+                  description={item.description}
+                  price={!_.isEmpty(item.configData) ? item.configData[0].price : null}
+                  image={item.image1}
 
+                />
+              )
+            })
+          }
+        </div>
+        {_.isEmpty(currentRespone) && <h3 className="inforError"> Không tìm thấy sản phẩm</h3>}
+        {
+          !_.isEmpty(currentRespone) &&
+          <>
+            <div className="showPage">
+              <span>Trang {currentPage}/{totalPages}</span>
+            </div>
+            <div className="buttonChangePage">
+              <Pagination
+                pages={[...createPageArr(totalPages)]}
+                max={totalPages >= 10 ? 8 : totalPages}
+                value={currentPage}
+                onChange={(e, page) => setCurrentPage(page)}
+                style={{ fontSize: '16px' }}
               />
-            )
-          })
+            </div>
+          </>
+
         }
       </div>
-      {_.isEmpty(currentRespone) && <h3> Không tìm thấy sản phẩm</h3>}
-      {
-        !_.isEmpty(currentRespone) &&
-        <>
-          <div className="showPage">
-            <span>Trang {currentPage}/{totalPages}</span>
-          </div>
-          <div className="buttonChangePage">
-            <Pagination
-              pages={[...createPageArr(totalPages)]}
-              max={totalPages >= 10 ? 8 : totalPages}
-              value={currentPage}
-              onChange={(e, page) => setCurrentPage(page)}
-              style={{ fontSize: '16px' }}
-            />
-          </div>
-        </>
-
-      }
     </div>
   );
 }

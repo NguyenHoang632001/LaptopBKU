@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Contact.scss'
 function Contact() {
     return (<div className=' containerContact'>
@@ -6,7 +7,7 @@ function Contact() {
             <div className='img1'>
                 <div className='img2'></div>
             </div>
-
+            <Link to='/system'> system</Link>
         </div>
     </div>);
 }

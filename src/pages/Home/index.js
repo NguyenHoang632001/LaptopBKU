@@ -75,46 +75,7 @@ function Home() {
 
 
       </div>
-      {/* </div> */}
 
-      <div class="hotline-phone-ring-wrap">
-        <div class="hotline-phone-ring">
-          <div class="hotline-phone-ring-circle"></div>
-          <div class="hotline-phone-ring-circle-fill"></div>
-          <div class="hotline-phone-ring-img-circle">
-            <a href="tel:0987654321" class="pps-btn-img">
-              <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50"></img>
-            </a>
-          </div>
-        </div>
-        <div class="hotline-bar">
-          <a href="#">
-            <span class="text-hotline">Liên hệ</span>
-          </a>
-          <div className='InforHotline'>
-
-
-
-            <a href='https://getcssscan.com/css-box-shadow-examples' className='iconLinkHotline'>
-
-              <FontAwesomeIcon icon={faFacebook} className="iconHotline" />
-              <span className='InfoIcon'>Facebook</span>
-            </a>
-            <a href='https://getcssscan.com/css-box-shadow-examples' className='iconLinkHotline'>
-
-              <FontAwesomeIcon icon={faFacebookMessenger} className="iconHotline" />
-              <span className='InfoIcon'>Facebook</span>
-            </a>
-            <a href='https://getcssscan.com/css-box-shadow-examples' className='iconLinkHotline'>
-
-              <FontAwesomeIcon icon={faInstagram} className="iconHotline" />
-              <span className='InfoIcon'>Facebook</span>
-            </a>
-
-
-          </div>
-        </div>
-      </div>
       <h2 className='experienceTitle'>TRẢI NGHIỆM CỦA KHÁCH HÀNG</h2>
       <div className='experienceContainer'>
         <div className='experienceItem'>

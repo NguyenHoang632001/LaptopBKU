@@ -33,38 +33,39 @@ function News() {
 
 
     return (
+        <div className="containerNewsMain">
+            <div className="container_News">
 
-        <div className="container_News">
+                <div className="banner_News">
+                    <div className="main_News">
+                        <MainNewsPost />
 
-            <div className="banner_News">
-                <div className="main_News">
-                    <MainNewsPost />
-
+                    </div>
+                    <div className="primary_News">
+                        <PrimaryNewsPost />
+                    </div>
                 </div>
-                <div className="primary_News">
-                    <PrimaryNewsPost />
+
+
+                <div>
+
+                    {
+                        restNews.map((item) => {
+                            return (
+                                <ItemRestNews
+                                    key={item.id}
+                                    id={item.id}
+
+                                    image={item.image}
+                                    title={item.title}
+                                />
+
+                            )
+                        })
+                    }
                 </div>
+
             </div>
-
-
-            <div>
-
-                {
-                    restNews.map((item) => {
-                        return (
-                            <ItemRestNews
-                                key={item.id}
-                                id={item.id}
-
-                                image={item.image}
-                                title={item.title}
-                            />
-
-                        )
-                    })
-                }
-            </div>
-
         </div>
     )
 }
