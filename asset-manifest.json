@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/LaptopBKU/static/css/main.3c343596.css",
-    "main.js": "/LaptopBKU/static/js/main.62ccd497.js",
+    "main.js": "/LaptopBKU/static/js/main.17e94c8f.js",
     "static/js/787.fe00223f.chunk.js": "/LaptopBKU/static/js/787.fe00223f.chunk.js",
     "static/media/img1.png": "/LaptopBKU/static/media/img1.7bd911c91b0c9651598a.png",
     "static/media/LOGO_OFFICIAL.png": "/LaptopBKU/static/media/LOGO_OFFICIAL.1e6126092217d43e39d0.png",
@@ -14,11 +14,11 @@
     "static/media/zalo.png": "/LaptopBKU/static/media/zalo.78a8fef16b551b02938f.png",
     "index.html": "/LaptopBKU/index.html",
     "main.3c343596.css.map": "/LaptopBKU/static/css/main.3c343596.css.map",
-    "main.62ccd497.js.map": "/LaptopBKU/static/js/main.62ccd497.js.map",
+    "main.17e94c8f.js.map": "/LaptopBKU/static/js/main.17e94c8f.js.map",
     "787.fe00223f.chunk.js.map": "/LaptopBKU/static/js/787.fe00223f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c343596.css",
-    "static/js/main.62ccd497.js"
+    "static/js/main.17e94c8f.js"
   ]
 }
