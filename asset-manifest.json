@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/LaptopBKU/static/css/main.aaaea87c.css",
-    "main.js": "/LaptopBKU/static/js/main.8fad1ee4.js",
+    "main.js": "/LaptopBKU/static/js/main.b9e86e70.js",
     "static/js/787.fe00223f.chunk.js": "/LaptopBKU/static/js/787.fe00223f.chunk.js",
-    "static/media/sw.png": "/LaptopBKU/static/media/sw.f8f9a42d4cb0ae9fb19d.png",
+    "static/media/sw.png": "/LaptopBKU/static/media/sw.005608f61594453f9dc1.png",
     "static/media/img1.png": "/LaptopBKU/static/media/img1.7bd911c91b0c9651598a.png",
     "static/media/LOGO_OFFICIAL.png": "/LaptopBKU/static/media/LOGO_OFFICIAL.1e6126092217d43e39d0.png",
     "static/media/LOGO_TEXT.png": "/LaptopBKU/static/media/LOGO_TEXT.7c869db57ccdcd6fba18.png",
@@ -17,11 +17,11 @@
     "static/media/zalo.png": "/LaptopBKU/static/media/zalo.78a8fef16b551b02938f.png",
     "index.html": "/LaptopBKU/index.html",
     "main.aaaea87c.css.map": "/LaptopBKU/static/css/main.aaaea87c.css.map",
-    "main.8fad1ee4.js.map": "/LaptopBKU/static/js/main.8fad1ee4.js.map",
+    "main.b9e86e70.js.map": "/LaptopBKU/static/js/main.b9e86e70.js.map",
     "787.fe00223f.chunk.js.map": "/LaptopBKU/static/js/787.fe00223f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aaaea87c.css",
-    "static/js/main.8fad1ee4.js"
+    "static/js/main.b9e86e70.js"
   ]
 }
