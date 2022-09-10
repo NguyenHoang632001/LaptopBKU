@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/LaptopBKU/static/css/main.448f7f25.css",
-    "main.js": "/LaptopBKU/static/js/main.ed2ef7b7.js",
-    "static/js/787.fe00223f.chunk.js": "/LaptopBKU/static/js/787.fe00223f.chunk.js",
-    "static/media/sw.png": "/LaptopBKU/static/media/sw.005608f61594453f9dc1.png",
-    "static/media/img1.png": "/LaptopBKU/static/media/img1.7bd911c91b0c9651598a.png",
-    "static/media/LOGO_OFFICIAL.png": "/LaptopBKU/static/media/LOGO_OFFICIAL.1e6126092217d43e39d0.png",
-    "static/media/LOGO_TEXT.png": "/LaptopBKU/static/media/LOGO_TEXT.7c869db57ccdcd6fba18.png",
-    "static/media/LOGO_RUN.png": "/LaptopBKU/static/media/LOGO_RUN.9e8266002383f9a87584.png",
-    "static/media/hoang.jpg": "/LaptopBKU/static/media/hoang.1757b6615e7a9d75066f.jpg",
-    "static/media/toi.jpg": "/LaptopBKU/static/media/toi.659a68d52618571aab6a.jpg",
-    "static/media/advice.png": "/LaptopBKU/static/media/advice.76c22db9b13b8e24d6e6.png",
-    "static/media/zyro-image.png": "/LaptopBKU/static/media/zyro-image.f2a44b9db6178f71c094.png",
-    "static/media/micro.jpg": "/LaptopBKU/static/media/micro.b40608bf44b240e50c21.jpg",
-    "static/media/facebook.png": "/LaptopBKU/static/media/facebook.b052c9964867e20ba03e.png",
-    "static/media/zalo.png": "/LaptopBKU/static/media/zalo.78a8fef16b551b02938f.png",
-    "index.html": "/LaptopBKU/index.html",
-    "main.448f7f25.css.map": "/LaptopBKU/static/css/main.448f7f25.css.map",
-    "main.ed2ef7b7.js.map": "/LaptopBKU/static/js/main.ed2ef7b7.js.map",
-    "787.fe00223f.chunk.js.map": "/LaptopBKU/static/js/787.fe00223f.chunk.js.map"
+    "main.css": "/static/css/main.448f7f25.css",
+    "main.js": "/static/js/main.ccdb2cbb.js",
+    "static/js/787.fe00223f.chunk.js": "/static/js/787.fe00223f.chunk.js",
+    "static/media/sw.png": "/static/media/sw.005608f61594453f9dc1.png",
+    "static/media/img1.png": "/static/media/img1.7bd911c91b0c9651598a.png",
+    "static/media/LOGO_OFFICIAL.png": "/static/media/LOGO_OFFICIAL.1e6126092217d43e39d0.png",
+    "static/media/LOGO_TEXT.png": "/static/media/LOGO_TEXT.7c869db57ccdcd6fba18.png",
+    "static/media/LOGO_RUN.png": "/static/media/LOGO_RUN.9e8266002383f9a87584.png",
+    "static/media/hoang.jpg": "/static/media/hoang.1757b6615e7a9d75066f.jpg",
+    "static/media/toi.jpg": "/static/media/toi.659a68d52618571aab6a.jpg",
+    "static/media/advice.png": "/static/media/advice.76c22db9b13b8e24d6e6.png",
+    "static/media/zyro-image.png": "/static/media/zyro-image.f2a44b9db6178f71c094.png",
+    "static/media/micro.jpg": "/static/media/micro.b40608bf44b240e50c21.jpg",
+    "static/media/facebook.png": "/static/media/facebook.b052c9964867e20ba03e.png",
+    "static/media/zalo.png": "/static/media/zalo.78a8fef16b551b02938f.png",
+    "index.html": "/index.html",
+    "main.448f7f25.css.map": "/static/css/main.448f7f25.css.map",
+    "main.ccdb2cbb.js.map": "/static/js/main.ccdb2cbb.js.map",
+    "787.fe00223f.chunk.js.map": "/static/js/787.fe00223f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.448f7f25.css",
-    "static/js/main.ed2ef7b7.js"
+    "static/js/main.ccdb2cbb.js"
   ]
 }
