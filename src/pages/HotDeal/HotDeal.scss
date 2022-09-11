@@ -8,7 +8,7 @@
         // border-bottom: 1px solid #0795df;
 
         .titleHotDealMain {
-            width: 30%;
+            width: 36%;
             height: 60px;
             // background-color: blue;
             border: 1px solid #0795df;
@@ -25,17 +25,20 @@
             }
 
             .nameHotDeal {
+
                 font-size: 30px;
                 font-weight: 600;
                 color: red;
                 animation: example 0.5s infinite;
+                padding-right: 20px;
+
             }
         }
     }
 }
 
 .container-product {
-    width: 1240px;
+    width: 1100;
     height: 60px;
     position: relative;
 

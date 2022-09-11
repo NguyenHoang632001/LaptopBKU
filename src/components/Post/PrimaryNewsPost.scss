@@ -1,7 +1,7 @@
 .container_primaryNews {
-    width: 99%;
+    width: 100%;
     position: absolute;
-    height: 100%;
+    height: 400px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -9,19 +9,30 @@
 
     display: flex;
     flex-direction: column;
-    // background-color: rgb(19, 9, 206);
+
     justify-content: space-between;
     overflow-y: auto;
-    // background-color: black;
+    align-items: center;
+    background-color: white;
+    // overflow: hidden;
+    // overflow-y: auto;
+    // overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+
 
 
 
     .containerFourtNews {
         width: 100%;
-
-        // background-color: red;
+        height: 100px;
+        background-color: rgba(238, 238, 238, 0.196);
         cursor: pointer;
-        // border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+
 
 
 
@@ -30,20 +41,24 @@
             display: flex;
             align-items: center;
 
-            height: 120px;
-            // border: 1px solid black;
-            // background-color: #0795df;
-            // border-radius: 10px;
+            height: 90px;
+            width: 100%;
             color: black;
+            align-items: center;
+            justify-content: center;
+            // background-color: red;
+            border: 1px solid #eee;
+
 
 
             .fourNewsBanner_img {
+
+                height: 90px;
                 width: 40%;
-                height: 100px;
                 object-fit: cover;
-                // border: 2px solid blue;
-                padding-left: 5px;
-                // border-radius: 10px;
+                border-top: 1px solid #eee;
+                // border-left: 1px solid black;
+                border-bottom: 1px solid #eee;
 
             }
 
@@ -54,7 +69,7 @@
                 text-align: left;
                 line-height: 1.5;
                 word-spacing: 0.1px;
-                font-size: 13px;
+                font-size: 10px;
 
             }
         }

@@ -19,6 +19,7 @@ const ManagerPost = () => {
     const [id, setId] = useState('');
     const [title, setTitle] = useState("");
     const [image, setImage] = useState("");
+    const [shortdes, setShortdes] = useState("");
     const [typeId, setTypeId] = useState('');
     const [descriptionHTML, setDescriptionHTML] = useState("");
     const [descriptionMarkdown, setDescriptionMarkdown] = useState("");
@@ -58,6 +59,12 @@ const ManagerPost = () => {
                     setTitle(e.target.value);
                     break;
                 }
+            case "SHORTDES":
+                {
+                    setShortdes(e.target.value);
+
+                    break;
+                }
             case "IMAGE":
                 {
                     const data = e.target.files;
@@ -80,6 +87,7 @@ const ManagerPost = () => {
     const handleCreatePost = async () => {
         let res = await createNewPost(accessToken, {
             title: title,
+            shortdes: shortdes,
             descriptionHTML: descriptionHTML,
             descriptionMarkdown: descriptionMarkdown,
             typeId: typeId,
@@ -89,6 +97,7 @@ const ManagerPost = () => {
             getAllPost(currentPage, 12);
             setTitle('');
             setImage('');
+            setShortdes('');
             setId('');
             setTypeId('');
             setDescriptionMarkdown('');
@@ -99,6 +108,7 @@ const ManagerPost = () => {
     const handleUpdatePost = async () => {
         let res = await updatePost(accessToken, {
             title: title,
+            shortdes: shortdes,
             descriptionHTML: descriptionHTML,
             descriptionMarkdown: descriptionMarkdown,
             typeId: typeId,
@@ -108,6 +118,7 @@ const ManagerPost = () => {
 
         if (res && res.errCode === 0) {
             setTitle('');
+            setShortdes("");
             setImage('');
             setId('');
             setTypeId('');
@@ -118,6 +129,7 @@ const ManagerPost = () => {
     }
     const handleChangePostInfo = (item) => {
         setTitle(item.title);
+        setShortdes(item.shortdes);
         setImage(item.image);
         setId(item.id);
         setTypeId(item.typeId);
@@ -153,6 +165,15 @@ const ManagerPost = () => {
                             Nhập Tiêu Đề Bài Viết
                         </label>
                         <textarea className='inputTitlePost' onChange={(e) => handleOnChangInput(e, "TITLE")} value={title}>
+                        </textarea>
+
+
+                    </div>
+                    <div className='listTitlePost'>
+                        <label className='titlePost'>
+                            Nhập Phần Mô Tả
+                        </label>
+                        <textarea className='inputTitlePost' onChange={(e) => handleOnChangInput(e, "SHORTDES")} value={shortdes}>
                         </textarea>
 
 

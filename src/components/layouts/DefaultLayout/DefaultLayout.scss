@@ -10,7 +10,7 @@
 
 .scroll-to-top {
     right: 15px !important;
-    background-color: rgb(86, 204, 247);
+    background-color: #0795df !important;
 
     &:hover {
         cursor: pointer;
@@ -81,8 +81,8 @@
 
     .InforHotline {
 
-        min-width: 200px;
-        min-height: 100px;
+        min-width: 300px;
+        height: 240px;
         // background-color: rgb(245, 153, 25);
         position: absolute;
         top: 0;
@@ -94,7 +94,8 @@
         display: none;
         flex-direction: column;
         align-items: center;
-        padding: 20px 20px;
+        // padding: 20px 20px;
+        padding-left: 10px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
         &::after {
@@ -118,28 +119,54 @@
             padding: 5px 0;
             align-items: center;
             text-decoration: none;
+            // background-color: red;
+            width: 100%;
 
-
-            .iconHotline {
-                font-size: 35px;
-
+            .zalo {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
                 margin-right: 20px;
-                color: blue;
+
             }
 
-            .iconHotlineInstar {
-                color: rgb(245, 137, 69)
-            }
-
-            .InfoIcon {
-                font-size: 20px;
-                text-decoration: none;
-                font-weight: 600;
+            .facebook {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+                transform: translateX(-10px);
             }
         }
 
+        .iconHotline {
+            font-size: 35px;
+
+            margin-right: 20px;
+            color: blue;
+
+        }
+
+        .iconHotlineCall {
+            color: rgba(46, 46, 249, 0.888);
+            margin-right: 25px;
+        }
+
+        .iconHotlineEmail {
+            color: orange;
+        }
+
+        .InfoIcon {
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            color: black;
+        }
     }
+
 }
+
 
 .hotline-phone-ring-circle {
     width: 85px;
@@ -282,8 +309,14 @@
     }
 }
 
-@media (max-width: 768px) {
-    .hotline-bar {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .hotline-phone-ring-wrap {
         display: none;
+
     }
+}
+
+.iconLinkHotlineFacebook {
+    transform: translateY(10px);
 }

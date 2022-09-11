@@ -47,10 +47,11 @@ function News() {
                 </div>
 
 
-                <div>
+                <div className="ListNews">
 
                     {
                         restNews.map((item) => {
+                            console.log("item", item)
                             return (
                                 <ItemRestNews
                                     key={item.id}
@@ -58,6 +59,8 @@ function News() {
 
                                     image={item.image}
                                     title={item.title}
+
+                                    shortdes={item.shortdes}
                                 />
 
                             )

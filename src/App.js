@@ -17,7 +17,7 @@ function App() {
   return (
 
 
-    <Router basename='/LaptopBKU/' >
+    <Router >
       <ScrollToTop>
 
         <Provider store={store}>

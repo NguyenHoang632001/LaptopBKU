@@ -32,6 +32,7 @@ function Search() {
     dispatch(fetchDataFinished());
   }
 
+
   const createPageArr = (pages) => {
     let pageArr = [];
     for (let i = 1; i <= pages; i++) {

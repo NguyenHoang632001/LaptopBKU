@@ -1,39 +1,37 @@
 .containerContact {
     margin-top: 100px;
-    width: 90%;
-    height: 500px;
-    background-color: #eee;
+    width: 1100px;
+    min-height: 500px;
+    // background-color: #eee;
     margin: 100px auto 0;
 
-    .containerContact {
-        word-wrap: 100%;
+    p {
+        font-size: 15px;
+        line-height: 1.5;
+        color: black;
+        text-align: justify;
 
-        .img1 {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: relative;
 
-            &:active .img2 {
-                display: block;
-            }
-
-            &:hover .img2 {
-                display: block;
-            }
-
-            .img2 {
-                width: 100px;
-                height: 100px;
-                background-color: black;
-                display: none;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                transform: translateY(100%);
-            }
+        a {
+            color: blue;
         }
 
+    }
+
+    .titleContact {
+
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 10px;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    .titleContactModifier {
+        font-weight: 400;
+        color: red
     }
 }

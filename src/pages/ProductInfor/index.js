@@ -66,6 +66,7 @@ function ProductInfor() {
   const getProductById = async (currentId) => {
     dispatch(fetchDataStart());
     let res = await getProductByIdService(currentId);
+
     if (res && res.errCode === 0) {
       setCurrentProduct(res.data);
       setCurrentConfig(res.data.configData[0]);
@@ -74,6 +75,8 @@ function ProductInfor() {
     }
     dispatch(fetchDataFinished());
   }
+
+
   const handleOnclickConfig = (config) => {
     setCurrentConfig(config);
     console.log("config: ", config.id)
@@ -189,7 +192,7 @@ function ProductInfor() {
             </div>
             <div>
               <span className="contentLabel">Bộ nhớ đệm CPU : </span>
-              <span>{currentConfig && currentConfig.CPUCache}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.CPUCache}</span>
             </div>
           </div>
           <div className="containerContent">
@@ -201,11 +204,11 @@ function ProductInfor() {
             </div>
             <div>
               <span className="contentLabel">Loại RAM : </span>
-              <span>{currentConfig && currentConfig.ramType}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.ramType}</span>
             </div>
             <div>
               <span className="contentLabel">BUS RAM : </span>
-              <span>{currentConfig && currentConfig.busRam}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.busRam}</span>
             </div>
           </div>
           <div className="containerContent">
@@ -213,11 +216,11 @@ function ProductInfor() {
             <h3 className="Content-Title">Ổ cứng</h3>
             <div>
               <span className="contentLabel">Số lượng ổ cứng : </span>
-              <span>{currentConfig && currentConfig.numberOfDrives}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.numberOfDrives}</span>
             </div>
             <div>
               <span className="contentLabel">Dung lượng : </span>
-              <span>{currentConfig && currentConfig.memory}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.memory}</span>
             </div>
 
           </div>
@@ -226,7 +229,7 @@ function ProductInfor() {
             <h3 className="Content-Title">Ổ cứng SSD</h3>
             <div>
               <span className="contentLabel">Dung lượng</span>
-              <span>{currentConfig && currentConfig.memory}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.memory}</span>
             </div>
           </div>
           <div className="containerContent">
@@ -234,12 +237,12 @@ function ProductInfor() {
             <h3 className="Content-Title">Card đồ họa</h3>
             <div>
               <span className="contentLabel">Card đồ họa : </span>
-              <span>{currentConfig && currentConfig.graphicsCard}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.graphicsCard}</span>
             </div>
             <div>
 
               <span className="contentLabel">Bộ nhớ đồ họa : </span>
-              <span>{currentConfig && currentConfig.graphicsMemory}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.graphicsMemory}</span>
             </div>
 
           </div>
@@ -248,17 +251,17 @@ function ProductInfor() {
             <h3 className="Content-Title">Màn hình</h3>
             <div>
               <span className="contentLabel">Kích thước màn hình : </span>
-              <span>{currentConfig && currentConfig.sizeScreen}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.sizeScreen}</span>
             </div>
             <div>
 
               <span className="contentLabel">Màn hình cảm ứng : </span>
-              <span>{currentConfig && currentConfig.touchScreen}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.touchScreen}</span>
             </div>
             <div>
 
               <span className="contentLabel">Công nghệ màn hình : </span>
-              <span>{currentConfig && currentConfig.screenTechnology}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.screenTechnology}</span>
             </div>
           </div>
           <div className="line"></div>
@@ -267,17 +270,17 @@ function ProductInfor() {
             <h3 className="Content-Title">PIN/Battery</h3>
             <div>
               <span className="contentLabel">Thông tin Pin : </span>
-              <span>{currentConfig && currentConfig.barteryInfo}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.barteryInfo}</span>
             </div>
             <div>
 
               <span className="contentLabel">Thời gian sử dụng thường : </span>
-              <span>{currentConfig && currentConfig.useTime}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.useTime}</span>
             </div>
             <div>
 
               <span className="contentLabel">Bộ sạc : </span>
-              <span>{currentConfig && currentConfig.charger}</span>
+              <span className="contentLabel">{currentConfig && currentConfig.charger}</span>
             </div>
           </div>
           <div className="containerContent">
@@ -310,6 +313,9 @@ function ProductInfor() {
         </div>
 
       </Modal>
+    </div>
+    <div className="markdownPoroduct" dangerouslySetInnerHTML={{ __html: currentProduct.descriptionHTML }}>
+
     </div>
   </div>
 }

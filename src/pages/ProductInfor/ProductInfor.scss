@@ -1,10 +1,62 @@
 .containerProductInformain {
     width: 100%;
     min-height: 500px;
+
+    .markdownPoroduct {
+        width: 1100px;
+        min-height: 20px;
+        // background-color: red;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: black;
+        }
+
+        h3 {
+            font-size: 23px;
+            color: black;
+
+        }
+
+        h4 {
+            font-size: 22px;
+            color: black;
+
+        }
+
+        h5 {
+            font-size: 21px;
+            color: black;
+
+        }
+
+        h6 {
+            font-size: 20px;
+            color: black;
+
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        img {
+            object-fit: cover;
+            width: 80%;
+            height: 50%;
+        }
+    }
 }
 
 .containerProduct {
-    width: 1240px;
+    width: 1100px;
     min-height: 600px;
 
 

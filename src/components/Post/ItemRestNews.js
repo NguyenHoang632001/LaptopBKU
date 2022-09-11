@@ -9,7 +9,12 @@ function ItemRestNews(props) {
         <div className="container_itemNews" onClick={() => redirectDetailPage(props.id)}>
 
             <img className="img_itemNews" src={props.image}></img>
-            <h2 className="title_itemNews">{props.title}</h2>
+            <div className="title_itemNews">
+                <h2 className="title_itemNew">{props.title}</h2>
+                <p className="title_shortdes">{props.shortdes}</p>
+            </div>
+
+
         </div>
     </div>
 

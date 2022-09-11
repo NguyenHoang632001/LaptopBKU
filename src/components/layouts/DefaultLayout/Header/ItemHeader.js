@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import './ItemHeader.scss';
 function ItemHeader(props) {
   let ItemLink = 'a';
   if (props.to) {

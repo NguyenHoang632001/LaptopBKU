@@ -9,44 +9,48 @@ import { convertBase64 } from 'utils/CommonUtil';
 import { useDispatch, useSelector } from 'react-redux';
 import { createNewProductService } from 'services/ProductService';
 import { fetchDataFinished, fetchDataStart } from 'redux/actions';
+import MarkdownIt from 'markdown-it';
+import MdEditor from 'react-markdown-editor-lite';
 
 const handleOnChangInput = () => {
 
 }
 function UpdateProduct() {
-    const [CPUCache, setCPUCache] = useState("");
-    const [CPUSpead, setCPUSpead] = useState("");
-    const [CPUType, setCPUType] = useState("");
-    const [barteryInfo, setBarteryInfo] = useState("");
-    const [brandData, setBrandData] = useState("");
     const [brandId, setBrandId] = useState("");
-    const [busRam, setBusRam] = useState("");
-    const [charger, setCharger] = useState("");
+    const mdParser = new MarkdownIt(/* Markdown-it options */);
+    // const [CPUCache, setCPUCache] = useState("");
+    // const [CPUSpead, setCPUSpead] = useState("");
+    // const [CPUType, setCPUType] = useState("");
+    // const [barteryInfo, setBarteryInfo] = useState("");
+    // const [brandData, setBrandData] = useState("");
+    // const [busRam, setBusRam] = useState("");
+    // const [charger, setCharger] = useState("");
 
-    const [graphicsCard, setGraphicsCard] = useState("");
-    const [graphicsMemory, setGraphicsMemory] = useState("");
+    // const [graphicsCard, setGraphicsCard] = useState("");
+    // const [graphicsMemory, setGraphicsMemory] = useState("");
     const [image1, setImage1] = useState("");
     const [image2, setImage2] = useState("");
     const [image3, setImage3] = useState("");
     const [memory, setMemory] = useState("");
     const [image4, setImage4] = useState("");
     const [name, setName] = useState("");
-    const [numberOfDrives, setNumberOfDrives] = useState("");
-    const [operatingSystem, setOperatingSystem] = useState("");
-    const [prototypeComunication, setPrototypeComunication] = useState("");
-    const [ramMemory, setRamMemory] = useState("");
-    const [ramType, setRamType] = useState("");
-    const [screenTechnology, setScreenTechnology] = useState("");
-    const [sizeScreen, setSizeScreen] = useState("");
-    const [touchScreen, setTouchScreen] = useState("");
-    const [turboMaxSpeed, setTurboMaxSpeed] = useState("");
-    const [useTime, setUseTime] = useState("");
-    const [weight, setWeight] = useState("");
+    // const [numberOfDrives, setNumberOfDrives] = useState("");
+    // const [operatingSystem, setOperatingSystem] = useState("");
+    // const [prototypeComunication, setPrototypeComunication] = useState("");
+    // const [ramMemory, setRamMemory] = useState("");
+    // const [ramType, setRamType] = useState("");
+    // const [screenTechnology, setScreenTechnology] = useState("");
+    // const [sizeScreen, setSizeScreen] = useState("");
+    // const [touchScreen, setTouchScreen] = useState("");
+    // const [turboMaxSpeed, setTurboMaxSpeed] = useState("");
+    // const [useTime, setUseTime] = useState("");
+    // const [weight, setWeight] = useState("");
     const [priViewImg1, setpriViewImg1] = useState('');
     const [priViewImg2, setpriViewImg2] = useState('');
     const [priViewImg3, setpriViewImg3] = useState('');
     const [priViewImg4, setpriViewImg4] = useState('');
-
+    const [descriptionHTML, setDescriptionHTML] = useState("");
+    const [descriptionMarkdown, setDescriptionMarkdown] = useState("");
 
     const search = useLocation().search;
 
@@ -57,6 +61,10 @@ function UpdateProduct() {
 
     const accessToken = useSelector(state => state.user.accessToken);
     const dispatch = useDispatch();
+    const handleEditorChange = ({ html, text }) => {
+        setDescriptionHTML(html);
+        setDescriptionMarkdown(text);
+    }
     const getProductById = async (id) => {
         dispatch(fetchDataStart());
         const res = await getProductByIdService(id);
@@ -72,6 +80,8 @@ function UpdateProduct() {
             setImage4(res.data.image4);
             setpriViewImg4(res.data.image4);
             setName(res.data.name);
+            setDescriptionHTML(res.data.descriptionHTML);
+            setDescriptionMarkdown(res.data.descriptionMarkdown)
 
         }
         dispatch(fetchDataFinished());
@@ -159,15 +169,12 @@ function UpdateProduct() {
             brandId: brandId,
             id: id,
             name: name,
-            priViewImg1: priViewImg1,
-            priViewImg2: priViewImg2,
-            priViewImg3: priViewImg3,
-            priViewImg4: priViewImg4,
             image1: image1,
             image2: image2,
             image3: image3,
             image4: image4,
-
+            descriptionHTML: descriptionHTML,
+            descriptionMarkdown: descriptionMarkdown
 
 
 
@@ -181,15 +188,12 @@ function UpdateProduct() {
         let res = await createNewProductService(accessToken, {
             brandId: brandId,
             name: name,
-            priViewImg1: priViewImg1,
-            priViewImg2: priViewImg2,
-            priViewImg3: priViewImg3,
-            priViewImg4: priViewImg4,
             image1: image1,
             image2: image2,
             image3: image3,
             image4: image4,
-
+            descriptionHTML: descriptionHTML,
+            descriptionMarkdown: descriptionMarkdown
 
 
 
@@ -235,6 +239,7 @@ function UpdateProduct() {
                 <label className='item' >Tên Sản Phẩm</label>
                 <textarea onChange={(e) => handleOnChangInput(e, "name")} value={name}></textarea>
             </div>
+            <MdEditor className='mardoweditor' value={descriptionMarkdown} style={{ height: '500px' }} renderHTML={text => mdParser.render(text)} onChange={handleEditorChange} />
 
             <div className='ItemDetailWrap'>
 

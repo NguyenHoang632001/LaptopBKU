@@ -6,6 +6,8 @@ import { getPostService } from "services/PostService";
 import '../News/News.scss'
 import { useDispatch } from "react-redux";
 import { fetchDataFinished, fetchDataStart } from "redux/actions";
+import './Software.scss'
+import sw from './sw.png'
 
 function Software() {
   const [newsList, setNewsList] = useState([]);
@@ -26,32 +28,26 @@ function Software() {
 
   }, [])
 
-  const restNews = newsList.slice(1, newsList.length);
-  // console.log(firstNewsPost)
-  // console.log("imge", firstNewsPost[0].image)
 
 
   return (
 
     <div className="container_News">
       <div className="banner_News">
-        <div className="main_News">
-          <MainNewsPost />
-        </div>
-        <div className="primary_News">
-          <PrimaryNewsPost />
-        </div>
+        <img src={sw} className="imgSw"></img>
       </div>
 
 
       <div>
 
         {
-          restNews.map((item) => {
+          newsList.map((item) => {
+
             return (
               <ItemRestNews
                 key={item.id}
                 id={item.id}
+                shortdes={item.shortdes}
                 image={item.image}
                 title={item.title}
               />

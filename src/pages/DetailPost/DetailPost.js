@@ -23,8 +23,8 @@ function DetailPost() {
     }
     return (
         <div className="detail-post-wrapper">
-            <h3>{currentPost.title}</h3>
-            <div className="" dangerouslySetInnerHTML={{ __html: currentPost.descriptionHTML }}>
+            <h3 className="title_postdetail">{currentPost.title}</h3>
+            <div className="title_postdetailMarkdown" dangerouslySetInnerHTML={{ __html: currentPost.descriptionHTML }}>
 
             </div>
         </div>

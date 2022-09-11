@@ -1,13 +1,15 @@
 .containerFirstNews {
+
     width: 100%;
     // background-color: rgba(0, 0, 0, 0.39);
-    height: 100%;
+    height: 400px;
     cursor: pointer;
+    background-color: red;
 
 
     .gallery-display-area {
         overflow: hidden;
-        height: 100%;
+        height: 400px;
         width: 100%;
         margin: 0 auto;
         // border-radius: 10px;
@@ -26,38 +28,25 @@
 
             .img {
                 float: left;
-                height: 102%;
+                height: 100%;
                 width: 100%;
                 // background-color: red;
                 justify-content: center;
                 align-items: center;
                 -webkit-box-reflect: below 1px -webkit-gradient(linear, right-top, right bottom, form(transparent), to(rgba(255, 255, 255, 0.3)));
                 // border-radius: 10px;
+                background-color: red;
 
                 .imgItem {
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
+                    object-fit: fill;
                     // border-radius: 10px;
+
                 }
             }
         }
     }
 
-    // .firstNewsBanner_title {
 
-    //     font-size: 25px;
-    //     color: rgba(67, 176, 248, 0.838);
-
-    //     &:hover {
-    //         cursor: pointer;
-    //         color: green;
-    //     }
-    // }
-
-    // .firstNewsBanner_img {
-    //     width: 100%;
-    //     height: calc(100% - 70px);
-
-    // }
 }

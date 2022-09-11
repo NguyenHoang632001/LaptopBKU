@@ -39,8 +39,8 @@ function Ensurrance() {
             <div className="container_ensurrance">
 
 
+                <h2 className="title_ensurrance"><h3 className="title_ensurranceItem">KIỂM TRA BẢO HÀNH SẢN PHẨM</h3></h2>
                 <div className="wrap_ensurrance">
-                    <h2 className="title_ensurrance"><h3 className="title_ensurranceItem">KIỂM TRA BẢO HÀNH SẢN PHẨM</h3></h2>
 
 
                     <div className="container_ensurrance">
@@ -49,6 +49,7 @@ function Ensurrance() {
                             <button onClick={() => handleOnClickCheckBtn(token)} className="btn_ensurrance">Kiểm tra</button>
                         </div>
                     </div>
+                    {/* <div className="backgroundMrimary"></div> */}
                 </div>
                 {
                     isShowResult &&
@@ -57,13 +58,13 @@ function Ensurrance() {
                             !_.isEmpty(result) ?
                                 <div className="result_ensurrance">
                                     <ul className="result_ensurrance-list">
-                                        <li className="result_ensurrance-item">Tên khách hàng: {result.name}</li>
-                                        <li className="result_ensurrance-item">Địa chỉ email: {result.email}</li>
-                                        <li className="result_ensurrance-item">Số điện thoại : {result.phoneNumber}</li>
-                                        <li className="result_ensurrance-item">Ngày mua: {result.purchaseDate}</li>
-                                        <li className="result_ensurrance-item">Thời hạn bảo hành: {result.warrantyPeriod}</li>
-                                        <li className="result_ensurrance-item">Ngày hết hạn: {result.expiredTime}</li>
-                                        <li className="result_ensurrance-item">Sản phẩm đã mua: {result.purchasedProduct}</li>
+                                        <li className="result_ensurrance-item"><b>Tên khách hàng:</b> {result.name}</li>
+                                        <li className="result_ensurrance-item"><b>Địa chỉ email:</b> {result.email}</li>
+                                        <li className="result_ensurrance-item"><b>Số điện thoại :</b> {result.phoneNumber}</li>
+                                        <li className="result_ensurrance-item"><b>Ngày mua:</b> {result.purchaseDate}</li>
+                                        <li className="result_ensurrance-item"><b>Thời hạn bảo hành:</b> {result.warrantyPeriod}</li>
+                                        <li className="result_ensurrance-item"><b>Ngày hết hạn:</b> {result.expiredTime}</li>
+                                        <li className="result_ensurrance-item"><b>Sản phẩm đã mua:</b> {result.purchasedProduct}</li>
 
                                     </ul>
                                 </div> :

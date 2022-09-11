@@ -4,10 +4,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
   faFacebookMessenger,
-  faInstagram
+  faInstagram,
+  faConnectdevelop,
+
+
+
 
 } from '@fortawesome/free-brands-svg-icons';
+import {
+  faPhone,
+  faEnvelopeCircleCheck,
+  faFace
+
+
+} from '@fortawesome/free-solid-svg-icons';
 import Footer from './DefaultFooter/Footer';
+import zalo from './zalo.png'
+import facebook from './facebook.png'
 import { useSelector } from 'react-redux';
 import { PuffLoader } from 'react-spinners';
 import ScrollToTop from 'react-scroll-to-top';
@@ -18,7 +31,7 @@ function DefaultLayout({ children, ...props }) {
   return (
     <div>
       <Header />
-      <ScrollToTop smooth component={<p style={{ color: "black", fontWeight: "600" }}>TOP</p>} top="500" />
+      <ScrollToTop smooth component={<p style={{ color: "white", backgroundColor: "#0795df", fontWeight: "600" }}>TOP</p>} top="500" />
       <div className='loading'>
         {isLoading && <PuffLoader loading color='blue' />}
       </div>
@@ -37,20 +50,26 @@ function DefaultLayout({ children, ...props }) {
 
 
 
-            <a href='https://www.facebook.com/profile.php?id=100074526639454' className='iconLinkHotline'>
+            <a href='https://www.facebook.com/laptopnhapkhauUSAchinhhang' target="_blank" className='iconLinkHotline iconLinkHotlineFacebook'>
 
-              <FontAwesomeIcon icon={faFacebook} className="iconHotline" />
+              <img src={facebook} className='facebook'></img>
               <span className='InfoIcon'>Facebook</span>
             </a>
-            <a href='https://www.facebook.com/profile.php?id=100074526639454' className='iconLinkHotline'>
+            <a href='https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F' target="_blank" className='iconLinkHotline'>
 
-              <FontAwesomeIcon icon={faFacebookMessenger} className="iconHotline" />
-              <span className='InfoIcon'>Facebook</span>
+              {/* <FontAwesomeIcon icon={faPhone} className="iconHotline" /> */}
+              <img src={zalo} className='zalo'></img>
+              <span className='InfoIcon'>Chat Zalo</span>
             </a>
-            <a href='https://www.facebook.com/profile.php?id=100074526639454' className='iconLinkHotline'>
+            <a href='#' target="_blank" className='iconLinkHotline'>
 
-              <FontAwesomeIcon icon={faInstagram} className="iconHotline iconHotlineInstar" />
-              <span className='InfoIcon'>Facebook</span>
+              <FontAwesomeIcon icon={faEnvelopeCircleCheck} className="iconHotline iconHotlineEmail" />
+              <span className='InfoIcon'>laptopbku@gmail.com</span>
+            </a>
+            <a href='#' className='iconLinkHotline'>
+
+              <FontAwesomeIcon icon={faPhone} className="iconHotline iconHotlineCall" />
+              <span className='InfoIcon'>Hotline: 0339 094 095</span>
             </a>
 
 
