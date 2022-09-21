@@ -5,12 +5,13 @@ import CardItem from "components/CardItem";
 import Pagination from '@atlaskit/pagination';
 import './Search.scss'
 import _ from "lodash";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchDataFinished, fetchDataStart } from "redux/actions";
 
 function Search() {
   let search = useLocation().search;
   let q = new URLSearchParams(search).get('q');
+  let isLoading = useSelector(state => (state.app.isLoading));
   const [currentRespone, setCurrentRespone] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
@@ -65,7 +66,7 @@ function Search() {
             })
           }
         </div>
-        {_.isEmpty(currentRespone) && <h3 className="inforError"> Không tìm thấy sản phẩm</h3>}
+        {_.isEmpty(currentRespone) && !isLoading && <h3 className="inforError"> Không tìm thấy sản phẩm</h3>}
         {
           !_.isEmpty(currentRespone) &&
           <>

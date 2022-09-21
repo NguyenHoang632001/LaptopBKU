@@ -13,7 +13,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import advice from './advice.png'
 import micro from './micro.jpg'
 import hoang from './hoang.jpg'
+import cothu from './cothu.jpg'
+import hoangtruong from './hoangtruong.jpg'
+import linh from './linh.jpg'
+import manh from './manh.jpg'
+import nhu from './nhu.jpg'
+import thanhduy from './thanhduy.jpg'
 import toi from './toi.jpg'
+
+
 import {
   faFacebook,
   faFacebookMessenger,
@@ -112,37 +120,37 @@ function Home() {
             <p className='experienceComment'>“Vì cần máy nhỏ gọn để di chuyển nên mình nhắm tới Thinkpad x280, nhưng không đủ tài chính nên shop tư vấn qua 7280 cũng nhỏ tương tự, mình sài cảm thấy khá hài long, bạn tư vấn thì khá là oke vì tư vấn đúng mục đích và tài chính, cho shop 4,5*”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={thanhduy} className='experienceImg'></img>
             <h4 className='experienceName'>Nguyễn Thanh Duy</h4>
             <span className='experienceWork'>Sinh viên Đại học Bách Khoa TpHCM</span>
             <p className='experienceComment'>“Do nhu cầu học xây dựng nên cần máy trạm khỏe để cày tiền xuyên màn đêm ^.^, thấy anh chủ cũng học Bách Khoa nên mình cũng khá yên tâm, từ lúc mua tới giờ gần 2 năm thì thấy con trạm sắt của mình vẫn hoạt động tốt =)) Sẽ recommend các em sinh viên khóa sau ủng hộ shop”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={linh} className='experienceImg'></img>
             <h4 className='experienceName'>Nguyễn Thị Linh </h4>
             <span className='experienceWork'>Nhân viên văn phòng</span>
             <p className='experienceComment'>“Là nữ nên mình khá là kén chọn trong việc mua laptop, một phần là vì không rành công nghệ, nhưng được người quen giới thiệu cho chỗ này nên cũng yên tâm mua, lúc mình mua thì shop còn duy nhất 1 máy Mac nên mình chọn luôn. Ban đầu thì khá khó sài do mình chưa sài Mac nhưng sau quen thì thấy sài cũng khá ổn”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={cothu} className='experienceImg'></img>
             <h4 className='experienceName'>Cô Hoài Thư</h4>
             <span className='experienceWork'>Giáo viên Trường THPT Nguyễn Khuyến </span>
             <p className='experienceComment'>“Máy sài tạm ổn do cá nhân mình chỉ dung giảng dạy bình thường, sẽ giới thiệu cho mọi người nếu ai có nhu cầu”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={hoangtruong} className='experienceImg'></img>
             <h4 className='experienceName'>Hoàng Trường</h4>
             <span className='experienceWork'>Kĩ sư xây dựng</span>
             <p className='experienceComment'>“Bị dụ dỗ nên tài chính từ 10 triệu sau khi được bạn chủ tư vấn thì mua hẳn máy hơn 2 chục xíu thôi :)) Hi vọng mọi người đừng bị bạn chủ tư vấn chứ sau khi nghe bạn đó tư vấn thì mình thấy máy nào cũng sang sịn mịn, cũng đều muốn mua hết hihi. Mình chỉ trải nghiệm dòng Precision 7530 nên ai có nhu cầu mua Precision thì ghé shop chất lượng khá tốt đó ạ, các dòng khác thì mình không biết”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={manh} className='experienceImg'></img>
             <h4 className='experienceName'>Vũ Duy Mạnh</h4>
             <span className='experienceWork'>Sinh viên đại học Kinh Tế - Luật TpHCM </span>
             <p className='experienceComment'>“Sau khi tham khảo nhiều nơi thì mình quyết định chọn mua Dell Latitude 7480, lí do vì bạn chủ là bạn của mình, máy sài khá tốt cho tới bây giờ, nếu sau máy hư thì sẽ phốt công tâm ạ :))”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={nhu} className='experienceImg'></img>
             <h4 className='experienceName'>Nguyễn Đình Như </h4>
             <span className='experienceWork'>Creater and Designer </span>
             <p className='experienceComment'>“Do tính chất công việc liên quan tới độ phân giải màn hình cao nên việc chọn laptop là khá khó khăn cho mình. Sau khi xem 7749 clip Review thì tới bây giờ mình vẫn không hối hận khi chọn Dell XPS 9300. Màn hình chuẩn đẹp hơn Ngọc Trinh =))”</p>
@@ -161,37 +169,37 @@ function Home() {
             <p className='experienceComment'>“Vì cần máy nhỏ gọn để di chuyển nên mình nhắm tới Thinkpad x280, nhưng không đủ tài chính nên shop tư vấn qua 7280 cũng nhỏ tương tự, mình sài cảm thấy khá hài long, bạn tư vấn thì khá là oke vì tư vấn đúng mục đích và tài chính, cho shop 4,5*”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={thanhduy} className='experienceImg'></img>
             <h4 className='experienceName'>Nguyễn Thanh Duy</h4>
             <span className='experienceWork'>Sinh viên Đại học Bách Khoa TpHCM</span>
             <p className='experienceComment'>“Do nhu cầu học xây dựng nên cần máy trạm khỏe để cày tiền xuyên màn đêm ^.^, thấy anh chủ cũng học Bách Khoa nên mình cũng khá yên tâm, từ lúc mua tới giờ gần 2 năm thì thấy con trạm sắt của mình vẫn hoạt động tốt =)) Sẽ recommend các em sinh viên khóa sau ủng hộ shop”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={linh} className='experienceImg'></img>
             <h4 className='experienceName'>Nguyễn Thị Linh </h4>
             <span className='experienceWork'>Nhân viên văn phòng</span>
             <p className='experienceComment'>“Là nữ nên mình khá là kén chọn trong việc mua laptop, một phần là vì không rành công nghệ, nhưng được người quen giới thiệu cho chỗ này nên cũng yên tâm mua, lúc mình mua thì shop còn duy nhất 1 máy Mac nên mình chọn luôn. Ban đầu thì khá khó sài do mình chưa sài Mac nhưng sau quen thì thấy sài cũng khá ổn”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={cothu} className='experienceImg'></img>
             <h4 className='experienceName'>Cô Hoài Thư</h4>
             <span className='experienceWork'>Giáo viên Trường THPT Nguyễn Khuyến </span>
             <p className='experienceComment'>“Máy sài tạm ổn do cá nhân mình chỉ dung giảng dạy bình thường, sẽ giới thiệu cho mọi người nếu ai có nhu cầu”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={hoangtruong} className='experienceImg'></img>
             <h4 className='experienceName'>Hoàng Trường</h4>
             <span className='experienceWork'>Kĩ sư xây dựng</span>
             <p className='experienceComment'>“Bị dụ dỗ nên tài chính từ 10 triệu sau khi được bạn chủ tư vấn thì mua hẳn máy hơn 2 chục xíu thôi :)) Hi vọng mọi người đừng bị bạn chủ tư vấn chứ sau khi nghe bạn đó tư vấn thì mình thấy máy nào cũng sang sịn mịn, cũng đều muốn mua hết hihi. Mình chỉ trải nghiệm dòng Precision 7530 nên ai có nhu cầu mua Precision thì ghé shop chất lượng khá tốt đó ạ, các dòng khác thì mình không biết”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={manh} className='experienceImg'></img>
             <h4 className='experienceName'>Vũ Duy Mạnh</h4>
             <span className='experienceWork'>Sinh viên đại học Kinh Tế - Luật TpHCM </span>
             <p className='experienceComment'>“Sau khi tham khảo nhiều nơi thì mình quyết định chọn mua Dell Latitude 7480, lí do vì bạn chủ là bạn của mình, máy sài khá tốt cho tới bây giờ, nếu sau máy hư thì sẽ phốt công tâm ạ :))”</p>
           </div>
           <div className='experienceItem'>
-            <img src={img1} className='experienceImg'></img>
+            <img src={nhu} className='experienceImg'></img>
             <h4 className='experienceName'>Nguyễn Đình Như </h4>
             <span className='experienceWork'>Creater and Designer </span>
             <p className='experienceComment'>“Do tính chất công việc liên quan tới độ phân giải màn hình cao nên việc chọn laptop là khá khó khăn cho mình. Sau khi xem 7749 clip Review thì tới bây giờ mình vẫn không hối hận khi chọn Dell XPS 9300. Màn hình chuẩn đẹp hơn Ngọc Trinh =))”</p>

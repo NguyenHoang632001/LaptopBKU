@@ -26,7 +26,7 @@
     margin: 0 auto;
     position: relative;
     background-color: #eee;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
 
     .discount {
@@ -34,7 +34,7 @@
         width: 100px;
         height: 35px;
         background-color: #ee361e;
-        border-radius: 5px;
+        border-bottom-left-radius: 5px;
         font-size: 17px;
         color: white;
         top: 0;
@@ -76,7 +76,7 @@
     .card-img {
         width: 300px;
         height: 200px;
-        object-fit: cover;
+        object-fit: fill;
         // border-radius: 10px;
 
     }
