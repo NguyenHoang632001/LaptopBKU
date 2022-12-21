@@ -1,18 +1,22 @@
-.container_News {
+
+@media only screen and (min-width : 1025px) and (max-width : 10000px)
+{
+    .container_News {
 
 
-    .banner_News {
-        width: 100%;
-        height: 500px;
-        // background-color: red;
-
-
-        .imgSw {
+        .banner_News {
             width: 100%;
             height: 500px;
-            object-fit: fill;
-            border: 1px solid black;
-            padding-left: 10px;
+            // background-color: red;
+    
+    
+            .imgSw {
+                width: 100%;
+                height: 500px;
+                object-fit: fill;
+                border: 1px solid black;
+                padding-left: 10px;
+            }
         }
     }
 }

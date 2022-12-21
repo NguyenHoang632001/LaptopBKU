@@ -1,37 +1,41 @@
-.containerContact {
-    margin-top: 100px;
-    width: 1100px;
-    min-height: 500px;
-    // background-color: #eee;
-    margin: 100px auto 0;
 
-    p {
-        font-size: 15px;
-        line-height: 1.5;
-        color: black;
-        text-align: justify;
-
-
-        a {
-            color: blue;
-        }
-
-    }
-
-    .titleContact {
-
-        font-size: 15px;
-        font-weight: bold;
-        padding-top: 10px;
-
-        a {
+@media only screen and (min-width : 1025px) and (max-width : 10000px)
+{
+    .containerContact {
+        margin-top: 100px;
+        width: 1100px;
+        min-height: 500px;
+        // background-color: #eee;
+        margin: 100px auto 0;
+    
+        p {
+            font-size: 15px;
+            line-height: 1.5;
             color: black;
-            text-decoration: none;
+            text-align: justify;
+    
+    
+            a {
+                color: blue;
+            }
+    
         }
-    }
-
-    .titleContactModifier {
-        font-weight: 400;
-        color: red
+    
+        .titleContact {
+    
+            font-size: 15px;
+            font-weight: bold;
+            padding-top: 10px;
+    
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    
+        .titleContactModifier {
+            font-weight: 400;
+            color: red
+        }
     }
 }

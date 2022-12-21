@@ -1,12 +1,16 @@
-.containerProductPage {
-    width: 1100px;
-    min-height: 20px;
-    background-color: rgba(238, 238, 238, 0.219);
-    margin: 0 auto;
-}
 
-.containerProductMain {
-    width: 100%;
-    margin-top: 80px;
-
+@media only screen and (min-width : 1025px) and (max-width : 10000px)
+{
+    .containerProductPage {
+        width: 1100px;
+        min-height: 20px;
+        background-color: rgba(238, 238, 238, 0.219);
+        margin: 0 auto;
+    }
+    
+    .containerProductMain {
+        width: 100%;
+        margin-top: 80px;
+    
+    }
 }

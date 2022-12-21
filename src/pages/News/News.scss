@@ -1,4 +1,6 @@
-.containerNewsMain {
+
+@media only screen and (min-width : 1025px) and (max-width : 10000px)
+{.containerNewsMain {
     width: 100%;
     // min-height: 200px;
 
@@ -58,5 +60,7 @@
             }
         }
     }
+
+}
 
 }

@@ -12,6 +12,8 @@ import {
   faLaptopMedical,
   faFileLines,
   faLaptop,
+  faBars,
+  faXmark,
 
   faHeadphonesSimple
 
@@ -27,6 +29,7 @@ import { useState } from 'react';
 function Header(props) {
   let navigate = useNavigate();
   const [searchInput, setSearchInput] = useState('');
+  const [showMenu,setShowMenu]=useState(false);
   const handleOnChangeInput = (e) => {
     setSearchInput(e.target.value);
   };
@@ -65,17 +68,22 @@ function Header(props) {
               className="search_input"
               value={searchInput}
               onChange={handleOnChangeInput}
-              placeholder="Tìm kiếm sản phẩm tại đây"
+              placeholder="Tìm kiếm "
               onKeyPress={enterPressed.bind(this)}
 
             />
+           
             <button className="search-button" onClick={handleOnClickSearchBtn}>
               <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon" />
 
             </button>
           </div>
         </div>
-        <div className="header-content_right">
+        {console.log(showMenu)}
+        <div className='menu' onClick={()=>setShowMenu(!showMenu)} >
+         <ItemHeader to="" link="" icon={showMenu==false?faBars:faXmark} />
+        </div>
+        <div className={showMenu==false?'header-content_right':'header-content_right-show'}>
           <div className='productMain'>
 
             <ItemHeader to="/product" link="" icon={faLaptop} title="SẢN PHẨM" />

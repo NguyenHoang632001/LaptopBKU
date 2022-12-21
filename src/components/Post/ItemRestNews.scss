@@ -1,71 +1,74 @@
-.container_ListItemNews {
-    width: 70%;
-    height: 200px;
-    // background-color: red;
-    position: relative;
-    margin-bottom: 40px;
-    padding: 0;
-    // margin: 0;
 
-    h5 {
-        margin-bottom: 100px;
-    }
-
-    cursor: pointer;
-
-    .container_itemNews {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-
+@media only screen and (min-width : 1025px) and (max-width : 10000px){
+    .container_ListItemNews {
+        width: 70%;
+        height: 200px;
         // background-color: red;
+        position: relative;
+        margin-bottom: 40px;
         padding: 0;
-        margin: 0;
-        overflow: hidden;
-
-
-
-        .img_itemNews {
-            width: 40%;
-            height: 200px;
-            object-fit: fill;
-
+        // margin: 0;
+    
+        h5 {
+            margin-bottom: 100px;
         }
-
-        .title_itemNews {
-            width: 60%;
-            font-size: 25px;
-            padding-left: 30px;
-
-            .title_itemNew {
-                margin: 0;
-                font-size: 18px;
+    
+        cursor: pointer;
+    
+        .container_itemNews {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+    
+            // background-color: red;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+    
+    
+    
+            .img_itemNews {
+                width: 40%;
+                height: 200px;
+                object-fit: fill;
+    
             }
-
-            .title_shortdes {
-                margin: 0;
-                // background-color: pink;
-                font-size: 15px;
-                color: rgba(0, 0, 0, 0.751);
-                display: block;
-                display: -webkit-box;
-
-                font-size: 16px;
-                line-height: 1.3;
-                -webkit-line-clamp: 6;
-                /* số dòng hiển thị */
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                text-align: justify;
-                margin-top: 10px;
+    
+            .title_itemNews {
+                width: 60%;
+                font-size: 25px;
+                padding-left: 30px;
+    
+                .title_itemNew {
+                    margin: 0;
+                    font-size: 18px;
+                }
+    
+                .title_shortdes {
+                    margin: 0;
+                    // background-color: pink;
+                    font-size: 15px;
+                    color: rgba(0, 0, 0, 0.751);
+                    display: block;
+                    display: -webkit-box;
+    
+                    font-size: 16px;
+                    line-height: 1.3;
+                    -webkit-line-clamp: 6;
+                    /* số dòng hiển thị */
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    text-align: justify;
+                    margin-top: 10px;
+                }
             }
+    
         }
-
+    
+    
     }
-
-
 }
